@@ -1176,7 +1176,7 @@ function swap(row)
     
     </head>
     <body style="background-color:#6CDAEE;">
-       <h1 style="text-align:center"><span style="font-size:36px"><span style="color:#f39c12"><span style="background-color:#dddddd; text-shadow: -2px 2px #FFB52E; box-shadow: -2px 2px #C0C0C0;">Tool for Merging Blackboard Gradebook with 3rd-Party Gradebooks</span></span></span></h1>
+       <h1 style="text-align:center"><span style="font-size:36px"><span style="color:#121211"><span style="background-color:#dddddd; text-shadow: -2px 2px #1394f0; box-shadow: -2px 2px #C0C0C0;">Tool for Merging Blackboard Gradebook with 3rd-Party Gradebooks</span></span></span></h1>
     <b>Instructions:</b><ol>
     <li>Download the Blackboard gradebook from Work Offline area using comma as the separator and copy-paste the file content to the left textbox and parse the text
     <li>Copy-paste/download score report from the 3rd-party software such as google form, and copy-paste the file content to the right textbox and the paste the text
@@ -1191,9 +1191,9 @@ function swap(row)
 <td>
 <center><b>Course:</b> <select class="courselist" name="course">
   <option value="" disabled selected>Select your Course</option>
-  <option value="1">Data Structures & Algorithms I</option>
+  <option value="1">Database Systems Admin</option>
   <option value="2">Intro To Web Development</option>
-  <option value="3">Systems Architecture</option>
+  <option value="3">System Admin II</option>
 </select></center>
 </td>
 <td>
@@ -1217,14 +1217,14 @@ function swap(row)
             <td style="background-color:#36A1D4; text-align:center;"><strong>Download the Score Book from the 3rd Party Software such as Google form</strong></td>
         </tr>
         <tr>
-            <td style="vertical-align:top"><textarea style="width:100%;background-color:lightyellow;" id="bbsource" rows="20">"Last Name","First Name","Username","Student ID","Last Access","Availability","recitation0129 [Total Pts: 1 Score] |561031"
-"Honter","xys","dffg22@students.desu.edu","D10625372","2021-02-27 18:14:54","Yes","43.00"
-"Smith","Juan","qwer124@students.desu.edu","D10685777","2021-02-27 22:44:54","Yes","85.00"
+            <td style="vertical-align:top"><textarea style="width:100%;background-color:lightblue;" id="bbsource" rows="20">"Last Name","First Name","Username","Student ID","Last Access","Availability","recitation0129 [Total Pts: 1 Score] |561031"
+"Perry","Harris","pharris12@students.desu.edu","D10456524","2021-01-07 18:14:54","Yes","43.00"
+"Martin","John","jmartin14@students.desu.edu","D102345432","2021-01-07 22:44:54","Yes","90.00"
 </textarea><td>&nbsp;</td>
-            <td style="text-align:left; vertical-align:top"><textarea style="width:100%;background-color:lightyellow;"  id="googlesource" required="required" rows="20">Last Name        First Name    email    item1     item2
+            <td style="text-align:left; vertical-align:top"><textarea style="width:100%;background-color:lightblue;"  id="googlesource" required="required" rows="20">Last Name        First Name    email    item1     item2
 Sample    Student  samplestudent@desu.edu  70  80
-"Honter"  "xys"  "dffg22@students.desu.edu"  40  50
-"Honter"   "xys"  "dffg22@students.desu.edu"  45   67</textarea></td>
+"Perry"  "Harris"  "pharris12@students.desu.edu"  50  70
+"Perry"   "Harris"  "pharris12@students.desu.edu"  55   87</textarea></td>
                 </tr>
         <tr>
                     <td style="text-align:right"><table width="100%"><tr><td width="0%"><input class=button style=float:left id="swapbt"  type="button" value="Swap Column" onclick="swap(0)"></td><td align="right" width="99%"> Column Delimiter</td><td width="0%" ><select id="delimiter0" onchange="parse(0)"><option value="\t">Tab</option><option value=",">Comma</option></select></td><td width="0%"><input class=button  name="parsebb" type="button" value="Parse" onclick="parse(0)"/></td><td><input class=button style=float:right type="button" id="match" value="Match" onclick="match()"></td></tr></table></td>
@@ -1247,7 +1247,7 @@ Sample    Student  samplestudent@desu.edu  70  80
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td colspan="3" width=100% style="text-align:center"><textarea style="width:100%;background-color:#039BE5;" name="result" rows="20"></textarea></td>
+            <td colspan="3" width=100% style="text-align:center"><textarea style="width:100%;background-color:#2980b9;" name="result" rows="20"></textarea></td>
         </tr>
     </tbody>
 </table>
